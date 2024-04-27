@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>World Time</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/dist/main.css">
+    </head>
+
+    <body>
+        <header id="header">
+            <nav>
+                <img class="glo-icn" src="assets//Icon/globe.svg" alt="">
+                <h1 class="web-title">World Time</h1>
+            </nav>
+            <p class="tagline">The world of time explore through time in<br> different parts of the world</p>
+            <div class="search-cn">
+                <div>
+                    <img class="search-cn__icn-search" src="assets/Icon/search-icn.svg" alt="">
+                    <input class="search-cn__input-country" src="../Submission 3/Icon/filter-icn.svg" type="im" name="inputSeach" id="inputSeach" placeholder="Search Countries..." >
+                    <a href="#main"><button class="search-cn__search-btn">Search</button></a>
+                </div>
+
+                <div class="search-cn__filter-box">
+                    <img class="search-cn__icn-filter" src="assets/Icon/filter-icn.svg" alt="">
+                    <span class="search-cn__filter-title">Filter</span>
+                </div>
+            </div>
+                
+            <div class="modal">
+                <h1 class="modal__head">Filter</h1>
+                <h2 class="modal__continent">Continent</h2>
+                <ul>
+                    <li class="modal__option">Asia</li>
+                    <li class="modal__option">Africa</li>
+                    <li class="modal__option">Australia</li>
+                    <br>
+                    <li class="modal__option">Europe</li>
+                    <li class="modal__option">America</li>
+                </ul>
+                <a href="#main"><button class="modal__finish-btn" disabled>Finish</button></a>            
+                <a href="#main"><button class="modal__reset-btn">Reset</button></a>
+            </div>
+            <div class="overlay"></div>
+        </header>
+
+        <main id="main">
+            
+            <h1 class="main-heading search-result">Asia</h1>
+            <div class="asia-time-cn clock-cn">
+            </div>
+            
+            <h1 class="main-heading">Africa</h1>
+            <div class="africa-time-cn clock-cn"></div>
+
+            <h1 class="main-heading">Australia</h1>
+            <div  class="australia-time-cn clock-cn"></div>
+
+            <h1 class="main-heading">Europe</h1>
+            <div class="europe-time-cn clock-cn"></div>
+
+            <h1 class="main-heading">America</h1>
+            <div class="america-time-cn clock-cn"></div>
+            
+            <a href="">
+                <div class="backbtn-cn">
+                    <div class="backbtn-cn__box">
+                        <img class="backbtn-cn__arrow-up" src="assets/Icon/arrow-up.svg" alt="">
+                        <p class="backbtn-cn__teks">back</p>
+                    </div>
+                </div>
+            </a>
+        </main>
+
+        <footer>
+            <div class="foot-content">
+                <div class="foot-content__sosmed foot-content__box">
+                    <h3 class="foot-content__heading">My Social Media</h3>
+                    <ul>
+                        <li class="box__item"><img class="box__icn" src="assets/Icon/instagram.svg" alt=""><a href="">@Fadilhijayat</a></li>
+                        <li class="box__item"><img class="box__icn" src="assets/Icon/twitter.svg" alt=""><a href="">@Fadilhijayat</a></li>
+                        <li class="box__item"><img class="box__icn" src="assets/Icon/youtube.svg" alt=""><a href="">@Fadilhijayat</a></li>
+                        <li class="box__item"><img class="box__icn" src="assets/Icon/git-hub.svg" alt=""><a href="">@Fadilhijayat</a></li>
+                    </ul>
+                </div>
+                <div class="foot-content__tools foot-content__box">
+                    <h3 class="foot-content__heading">Tools</h3>
+                    <ul>
+                        <li class="box__item"><img class="box__icn" src="assets/Icon/figma.svg" alt=""><a href="">Figma</a></li>
+                        <li class="box__item"><img class="box__icn" src="assets/Icon/html5.svg" alt=""><a href="">HTML5</a></li>
+                        <li class="box__item"><img class="box__icn" src="assets/Icon/css3.svg" alt=""><a href="">CSS</a></li>
+                        <li class="box__item"><img class="box__icn" src="assets/Icon/javascript.svg" alt=""><a href="">Javascript</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script type="module" src="dist/bundle.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+

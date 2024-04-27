@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2todofamily=Montserrat&family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{color: black;}
+body{font-family: Montserrat;}
+a{text-decoration: none;}
+
+/*todo Header */
+header{margin: 0 0 200px 26px;}
+nav{
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+}
+h1,h2,h3,h4,h5{
+    font-weight: 400;
+}
+.glo-icn{
+    margin: 0 18px 0 0;
+}
+.web-title{
+    font-size: 25px;
+    font-family: Poppins;
+}
+.tagline{
+    font-size: 20px;
+    text-align: center;
+    line-height: 150%;
+    margin-top: 153px;
+}
+.search-cn{
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 86px;
+    display: flex;
+    flex-direction: column;
+}
+.search-cn__input-country{
+    width: 209px;
+    height: 28px;
+    border: 1px solid #29A0E4;
+    margin-right: 10px;
+    border-radius: 40px;
+    padding-left: 43px;
+    font-size: 13px;
+    outline: none;
+}
+.search-cn__input-country::placeholder{
+    color: #B3B3B3;
+}
+.search-cn__search-btn{
+    width: 56px;
+    height: 28px;
+    background-color: #FFFFFF;
+    font-size: 13px;
+    border-radius: 40px;
+    border: 1px solid #29A0E4;
+    cursor: pointer;
+}
+.search-cn__search-btn:hover{
+    background-color: #29A0E4;
+    color: #FFFFFF;
+    border: none;
+    transition: 100ms linear;
+}
+.search-cn__icn-search{
+    position: absolute;
+    margin-left: 9px;
+}
+.search-cn__filter-box{
+    width: 70px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.search-cn__filter-box:hover{
+    opacity: 0.4;
+    transition: 100ms;
+}
+.search-cn__icn-filter{
+    margin-right: 5px;
+}    
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    padding: 12px 0 8px 26px;
+}
+.modal__head{
+    font-family: Poppins;
+    font-size: 25px;
+}
+.modal__continent{
+    font-family: Poppins;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.modal__option{
+    display: inline-block;
+    font-size: 10px;
+    padding: 2px 4px;
+    border-radius: 15px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #29A0E4;
+    cursor: pointer;
+}
+.modal__finish-btn{
+    padding: 2px 8px;
+    margin-top: 15px;
+    border: 1px solid #29A0E4;
+    background-color: #29A0E4;
+    color: #FFFFFF;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 10px;
+}
+.modal__reset-btn{
+    border: none;
+    background-color: #FFFFFF;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 10px;
+}
+.modal__finish-btn:hover,
+.modal__option:hover{
+    opacity: 0.4;
+    transition: 100ms linear;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* todo Main */
+main{
+    margin-left: 26px;
+}
+.main-heading{
+    font-family: Poppins;
+    margin: 17px 0 33px 0;
+}
+.clock-cn{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.clock-cn__item{
+    margin: 0 50px 30px 0;
+    width: 130px;
+    font-family: Poppins;
+}
+.clock-cn__item-heading{
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+.clock-cn__flag-icn{
+    margin-right: 15px;
+}
+.backbtn-cn{
+    position: sticky;
+    bottom: 0;
+}
+.backbtn-cn:hover{opacity: 0.4;}
+.backbtn-cn__box{
+    width: max-content;
+    position: absolute;
+    right: 26px;
+    bottom: 13px;
+    cursor: pointer;
+}
+.backbtn-cn__arrow-up{
+    margin: 0 auto;
+    display: block;
+}
+
+/* footer */
+footer{
+    padding-left: 26px;
+    height: 232px;
+    background-color:#B3B3B3;
+}
+.foot-content{
+    display: flex;
+    margin-left: 26px;
+    margin: 0 auto;
+}
+.foot-content__box{
+    padding-top: 17px;
+    width: max-content;
+}
+.foot-content__heading{
+    margin-bottom: 15px;
+    font-family: Poppins;
+}
+.foot-content__sosmed{
+    margin-right: 46px;
+}
+.box__item{
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+}
+.box__icn{
+    margin-right: 6px;
+}
+.clock-box{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 3px solid #29A0E4;
+    position: relative;
+    margin-top: 18px;
+    display: block;
+}
+.clock-box__dot{
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+}
+.clock-box__clockwise{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    transform-origin: top left;
+}
+.clock-box__second-line{
+    rotate: 45deg;
+}
+.clock-box__minute-line{
+    height: 30px;
+    rotate: 0deg;
+}
+.clock-box__hours-line{rotate: 90deg;}
+
+.clock-box__delf-jam{
+    position: absolute;
+    left: 50%;
+    width: max-content;
+    height: 100%;
+    font-size: 11px;
+}
+.clock-box__jam-12{
+    transform: translate(-50%,0) rotate(0);
+}
+.clock-box__jam-1{
+    transform: translate(-50%,0) rotate(30deg);
+}
+.clock-box__jam-2{
+    transform: translate(-50%,0) rotate(60deg);
+}
+.clock-box__jam-4{
+    transform: translate(-50%,0) rotate(120deg);
+}
+.clock-box__jam-5{
+    transform: translate(-50%,0) rotate(150deg);
+}
+.clock-box__jam-7{
+    transform: translate(-50%,0) rotate(210deg);
+}
+.clock-box__jam-8{
+    transform: translate(-50%,0) rotate(240deg);
+}
+.clock-box__jam-10{
+    transform: translate(-50%,0) rotate(300deg);
+}
+.clock-box__jam-11{
+    transform: translate(-50%,0) rotate(330deg);
+}
+.clock-box__jam-3{
+    transform: translate(-50%,0) rotate(90deg);
+}
+.clock-box__jam-6{
+    transform: translate(-50%,0) rotate(180deg);
+}
+.clock-box__jam-9{
+    transform: translate(-50%,0) rotate(270deg);
+}
+.clock-box__jam-3 span{
+    display: block;
+    rotate: -90deg;
+}
+.clock-box__jam-6 span{
+    display: block;
+    rotate: -180deg;
+}
+.clock-box__jam-9 span{
+    display: block;
+    rotate: -270deg;
+}
+
+/* todo General */
+.visible{
+    opacity: 1;
+    visibility: visible;
+    transition: 150ms linear;
+}
+.hidden{display: none;}
+.disabled{opacity: 0.4;}
+@media only screen and (min-width : 992px){
+    /* todo Header */
+    header{margin-left: 40px;}
+    nav{height: 120px;}
+    .web-title{
+        font-size: 31px;
+        font-weight: 400;
+    }
+    .glo-icn{width: 40px;}
+    .tagline{font-size: 31px;}
+    .search-cn__input-country{
+        width: 300px;
+        height: 40px;
+        font-size: 16px;
+        padding-left: 59px;
+    }
+    .search-cn__icn-search{width: 40px;}
+    .search-cn__search-btn{
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .search-cn__icn-filter{height: 30px;}
+    .search-cn__filter-title{font-size: 16px;}
+    .modal{
+        padding: 37px 0 8px 30px;
+        width: 250px;
+        height: 250px;
+    }
+    .modal__head{
+        margin-top: 0;
+        font-size: 31px;
+    }
+    .modal__continent{font-size: 16px;}
+    .modal__option,
+    .modal__finish-btn,
+    .modal__reset-btn{
+        font-size: 12.8px;
+    }
+    
+    /* todo Main */
+    main{margin-left: 40px;}
+    .main-heading{margin-top: 34px;}
+    .clock-cn__item-heading{font-size: 25px;}
+    .clock-cn__item{
+        width: 200px;
+        margin-right: 70px;
+    }
+    .clock-box{
+        width: 150px;
+        height: 150px;
+        border: 4px solid #29A0E4;
+    }
+    .clock-box__delf-jam{font-size: 16px;}
+    .clock-box__dot{
+        width: 5.3px;
+        height: 5.3px;
+    }
+    .clock-box__second-line{height: 40px;}
+    .clock-box__minute-line{height: 44px;}
+    .clock-box__hours-line{height: 33.3px;}
+    .clock-cn__flag-icn{width: 30px;}
+
+    /* todo footer */
+    footer{
+        padding-left: 40px;
+        height: 343px;
+    }
+    .foot-content{padding-top: 34px;}
+    .foot-content__heading{font-size: 31px;}
+    .box__item{
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
+    .foot-content__sosmed{margin-right: 54px;}
+    .box__icn{
+        width: 30px;
+        margin-right: 10px;
+    }
+}
